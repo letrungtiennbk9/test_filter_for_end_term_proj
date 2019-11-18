@@ -23,6 +23,9 @@
     ajaxUtils.sendGetRequest(singleProductHtmlUrl, (singleProductHtml) => {
       let finalHtml = "";
 
+      /**
+       * Deal with the filter condition 
+       */
       for(let i = 0; i<productsJSON.length && productsJSON[i].price <= 600; i++){
         let s = singleProductHtml;
 

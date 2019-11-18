@@ -21,6 +21,11 @@
   
   
   // Makes an Ajax GET request to 'requestUrl'
+  /**
+   * @param responseHandler pay attention to this param, the func retrieve this param to manipulate the response, this is a 
+   * callback, so we will define it later when we invoke the func
+   * @param isJsonResponse if the response is json/jsonarray, pass true and vice versa
+   */
   ajaxUtils.sendGetRequest = 
     function(requestUrl, responseHandler, isJsonResponse) {
       var request = getRequestObject();
